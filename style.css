@@ -8,7 +8,8 @@ p{
     text-align: justify;
 }
 .container {
-    height: 100vh;  
+    height: 100vh; 
+    width: 95vw; 
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 0.4fr 1.1fr 0.1fr;
@@ -21,28 +22,28 @@ p{
       "footer";
   }
   
-  footer { 
+  footer {
+    width: 100%;
     grid-area: footer;
     position: sticky;
     bottom: 0;
-    width: 95vw;
     background-color: white;
     display: flex;
-    justify-content: space-between; 
-
-  
+    justify-content: space-around;
+    
   }
   
   header { 
     grid-area: header;
-
+    width: 100%;
     }
   
   .tratamientos {  
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 6px 0px;
+    gap: 25px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       "descripcion"
@@ -54,13 +55,13 @@ p{
       "trat6"
       "descarga";
     grid-area: tratamientos;
+    padding-left: 10px;
+
   }
   
   .descripcion { 
     grid-area: descripcion; 
     text-align: center;
-    border: 1%;
-    padding: 1%;
     }
     .descripcion p{
       text-align: center;
@@ -69,49 +70,42 @@ p{
   .trat1 {
     
     grid-area: trat1;
-    border: 1%;
-    padding: 1%;
+    
   }
   
   .trat2 {
     
     grid-area: trat2;
-    border: 1%;
-    padding: 1%;
+    
   }
   
   .trat3 {
     
     grid-area: trat3;
-    border: 1%;
-    padding: 1%;
+    
   }
   
   .trat4 {
     
     grid-area: trat4;
-    border: 1%;
-    padding: 1%;
+    
   }
   
   .trat5 {
     
     grid-area: trat5;
-    border: 1%;
-    padding: 1%;
+    
   }
   
   .trat6 {
     
     grid-area: trat6;
-    border: 1%;
-    padding: 1%;
+    
   }
   
   .descarga { 
     grid-area: descarga;
-    border: 1%;
-    padding: 1%;
+    
    }
   
 header h1{
@@ -132,6 +126,11 @@ header h2{
     font-weight: thin 100;
     margin-top: 0%;
 }
+.logo{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
 .creditos{
   font-size: xx-small;
   text-align: end;
@@ -141,5 +140,5 @@ header h2{
   width: 45px;
   }
 .primericono{
-  margin-left: 20vw;
+  margin-left: 10%;
 }
