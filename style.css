@@ -126,7 +126,7 @@ header h2{
     font-weight: thin 100;
     margin-top: 0%;
 }
-.logo{
+img.logo{
   height: 100%;
   width: 100%;
   object-fit: contain;
