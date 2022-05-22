@@ -1,0 +1,145 @@
+*{
+    font-family: 'Montserrat' , sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+p{
+    text-align: justify;
+}
+.container {
+    height: 100vh;  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 1.1fr 0.1fr;
+    gap: 11px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "aboutme"
+      "tratamientos"
+      "footer";
+  }
+  
+  footer { 
+    grid-area: footer;
+    position: sticky;
+    bottom: 0;
+    width: 95vw;
+    background-color: white;
+    display: flex;
+    justify-content: space-between; 
+
+  
+  }
+  
+  header { 
+    grid-area: header;
+
+    }
+  
+  .tratamientos {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 6px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "descripcion"
+      "trat1"
+      "trat2"
+      "trat3"
+      "trat4"
+      "trat5"
+      "trat6"
+      "descarga";
+    grid-area: tratamientos;
+  }
+  
+  .descripcion { 
+    grid-area: descripcion; 
+    text-align: center;
+    border: 1%;
+    padding: 1%;
+    }
+    .descripcion p{
+      text-align: center;
+    }
+  
+  .trat1 {
+    
+    grid-area: trat1;
+    border: 1%;
+    padding: 1%;
+  }
+  
+  .trat2 {
+    
+    grid-area: trat2;
+    border: 1%;
+    padding: 1%;
+  }
+  
+  .trat3 {
+    
+    grid-area: trat3;
+    border: 1%;
+    padding: 1%;
+  }
+  
+  .trat4 {
+    
+    grid-area: trat4;
+    border: 1%;
+    padding: 1%;
+  }
+  
+  .trat5 {
+    
+    grid-area: trat5;
+    border: 1%;
+    padding: 1%;
+  }
+  
+  .trat6 {
+    
+    grid-area: trat6;
+    border: 1%;
+    padding: 1%;
+  }
+  
+  .descarga { 
+    grid-area: descarga;
+    border: 1%;
+    padding: 1%;
+   }
+  
+header h1{
+    color: black;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    text-align: center;
+    font-size: 10em;
+    font-weight: bold 800;
+    font-style: italic;
+    margin-bottom: 0%;
+}
+header h1:hover {
+    color:#54b3d6 ;
+  }
+header h2{
+    text-align: end;
+    font-size: 5em;
+    font-weight: thin 100;
+    margin-top: 0%;
+}
+.creditos{
+  font-size: xx-small;
+  text-align: end;
+  text-decoration: none;
+}
+.iconos{
+  width: 45px;
+  }
+.primericono{
+  margin-left: 20vw;
+}
