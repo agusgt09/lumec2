@@ -7,13 +7,17 @@
 p{
     text-align: justify;
 }
+a{
+  text-decoration: none;
+}
 .container {
     height: 100vh; 
     width: 95vw; 
+    background-color: rgba(254,254,254,255);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 0.4fr 1.1fr 0.1fr;
-    gap: 11px 0px;
+    gap: 20px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       "header"
@@ -21,7 +25,11 @@ p{
       "tratamientos"
       "footer";
   }
-  
+  .aboutme{
+    grid-area: aboutme;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
   footer {
     width: 100%;
     grid-area: footer;
@@ -56,6 +64,9 @@ p{
       "descarga";
     grid-area: tratamientos;
     padding-left: 10px;
+    background-image: url("img/fondo.png");
+    background-repeat: repeat;
+    background-size: contain;
 
   }
   
@@ -126,11 +137,12 @@ header h2{
     font-weight: thin 100;
     margin-top: 0%;
 }
-.logo{
+img.logo{
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
+
 .creditos{
   font-size: xx-small;
   text-align: end;
